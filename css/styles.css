@@ -15,12 +15,16 @@ img {
   height: auto;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+}
+
 .container {
   max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .page-header {
@@ -34,8 +38,18 @@ img {
 }
 
 .logo {
-    margin-right: 76px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #4d5ae5;
+  margin-right: 76px;
 }
+.logo-accent { color: #2e2f42; }
+.logo-footer-accent { color: #f4f4fd; }
 
 .nav {
   display: flex;
@@ -47,8 +61,23 @@ img {
   gap: 40px;
 }
 
-.nav-link {
+.nav-link,
+.contact-link {
+  display: block;
   padding: 24px 0;
+  color: #2e2f42;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.contact-link:hover,
+.contact-link:focus {
+  color: #404bbf;
+}
+
+.contacts {
+  font-style: normal;
 }
 
 .contacts-list {
@@ -58,48 +87,47 @@ img {
 
 .hero {
   background-color: #2e2f42;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding: 188px 0;
   text-align: center;
 }
 
 .hero-title {
-    max-width: 496px;
+  max-width: 496px;
   margin: 0 auto 48px;
+  color: #ffffff;
 }
 
 .hero-btn {
-  display: block;  
+  padding: 16px 32px;
   min-width: 169px;
-  height: 56px;
-  margin: 0 auto;
-  border: none;
-  background-color: var(--iris, #4d5ae5);
   border-radius: 4px;
+  border: none;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
   cursor: pointer;
 }
-
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #404bbf;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .features {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 
 .features-list {
@@ -109,21 +137,20 @@ img {
 
 .feature-item {
   width: calc((100% - 72px) / 4);
-  margin-bottom: 72px;
 }
 
 .feature-title {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .team {
   background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 
-.team .section-title {
-    margin-bottom: 72px;
+.section-title {
+  text-align: center;
+  margin-bottom: 72px;
 }
 
 .team-list {
@@ -135,37 +162,24 @@ img {
   width: calc((100% - 72px) / 4);
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08)
-              0px 1px 1px rgba(46, 47, 66, 0.16)
-              0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow:
+    0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .team-info {
-padding: 32px 0;
+  padding: 32px 16px;
+  text-align: center;
 }
 
 .team-name {
-    text-align: center;
-    margin-bottom: 8px;
-}
-
-.team-position {
-    text-align: center;
+  margin-bottom: 8px;
 }
 
 .portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
-
-.portfolio .section-title {
-    margin-bottom: 72px;
-}
-
-.portfolio-title {
-    margin-bottom: 72px;
-}
-
 
 .portfolio-list {
   display: flex;
@@ -175,31 +189,34 @@ padding: 32px 0;
 }
 
 .portfolio-item {
-    width: calc((100% - (2 * 24px)) / 3);
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-info {
-    padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-name {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .site-footer {
   background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0;
 }
 
 .footer-container {
   display: block;
-  gap: 16px;
 }
 
 .site-footer .logo {
-    margin-bottom: 16px;
-    display: inline-block;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer-text {
+  color: #f4f4fd;
+  max-width: 264px;
 }
