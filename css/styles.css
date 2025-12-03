@@ -1,4 +1,5 @@
 
+/* RESET */
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
@@ -19,6 +20,8 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
   background-color: #ffffff;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .container {
@@ -48,8 +51,20 @@ body {
   color: #4d5ae5;
   margin-right: 76px;
 }
-.logo-accent { color: #2e2f42; }
-.logo-footer-accent { color: #f4f4fd; }
+
+.logo-accent {
+  color: #2e2f42;
+}
+
+.logo-footer-accent {
+  color: #f4f4fd;
+}
+
+.site-footer .logo {
+  margin-right: 0;
+  margin-bottom: 16px;
+  display: block;
+}
 
 .nav {
   display: flex;
@@ -61,18 +76,18 @@ body {
   gap: 40px;
 }
 
-.nav-link,
-.contact-link {
+.nav-link {
   display: block;
   padding: 24px 0;
   color: #2e2f42;
   text-decoration: none;
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .nav-link:hover,
-.nav-link:focus,
-.contact-link:hover,
-.contact-link:focus {
+.nav-link:focus {
   color: #404bbf;
 }
 
@@ -85,6 +100,21 @@ body {
   gap: 40px;
 }
 
+.contact-link {
+  display: block;
+  padding: 24px 0;
+  color: #434455;
+  text-decoration: none;
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: #404bbf;
+}
+
 .hero {
   background-color: #2e2f42;
   padding: 188px 0;
@@ -95,6 +125,11 @@ body {
   max-width: 496px;
   margin: 0 auto 48px;
   color: #ffffff;
+
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
 }
 
 .hero-btn {
@@ -104,10 +139,14 @@ body {
   border: none;
   background-color: #4d5ae5;
   color: #ffffff;
+
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
+
+  letter-spacing: 0.04em;
 }
+
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #404bbf;
@@ -141,6 +180,11 @@ body {
 
 .feature-title {
   margin-bottom: 8px;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .team {
@@ -151,6 +195,12 @@ body {
 .section-title {
   text-align: center;
   margin-bottom: 72px;
+
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 
 .team-list {
@@ -175,6 +225,11 @@ body {
 
 .team-name {
   margin-bottom: 8px;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .portfolio {
@@ -200,6 +255,11 @@ body {
 
 .portfolio-name {
   margin-bottom: 8px;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .site-footer {
@@ -209,11 +269,6 @@ body {
 
 .footer-container {
   display: block;
-}
-
-.site-footer .logo {
-  display: inline-block;
-  margin-bottom: 16px;
 }
 
 .footer-text {
